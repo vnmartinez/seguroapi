@@ -1,6 +1,9 @@
-@PROVA_N2_HostAddress = http://localhost:5252
+
 
 GET {{PROVA_N2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+GET {{PROVA_N2_HostAddress}}/creditScore
 Accept: application/json
 
 ###
