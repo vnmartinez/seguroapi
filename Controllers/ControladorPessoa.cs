@@ -9,7 +9,8 @@ namespace PROVA_N2.Controllers
         [HttpGet]
         public IActionResult Get([FromQuery] PessoaConsulta pessoaConsulta)
         {
-            try {
+            try
+           {
                 if (pessoaConsulta == null) { 
                     return BadRequest("Dados inválidos");
                 }
@@ -28,7 +29,7 @@ namespace PROVA_N2.Controllers
                 }
                 return Ok(registro.CreditScore);   
             } catch (System.Exception ex) {
-                return BadRequest("Entrou mas deu erro: " + ex.Message);
+                return BadRequest("Chamou o endpoint mas deu erro: " + ex.Message);
             }
         }
     }
