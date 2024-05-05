@@ -1,12 +1,12 @@
 public class PessoaConsulta
 {
     public int Age {  get; set; }
-    public required string Gender { get; set; }
+    public  string? Gender { get; set; }
     public int DrivingExperience { get; set; }
-    public required string Education { get; set; }
-    public required string Income { get; set; }
+    public  string? Education { get; set; }
+    public  string? Income { get; set; }
     public int VehicleYear { get; set; }
-    public required string VehicleType { get; set; }
+    public  string? VehicleType { get; set; }
     public int AnnualMileage {  get; set; } 
 
     public String GetAgeRange(){
