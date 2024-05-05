@@ -29,7 +29,7 @@ namespace PROVA_N2.Controllers
                 }
                 return Ok(registro.CreditScore);   
             } catch (System.Exception ex) {
-                return BadRequest("Chamou o endpoint mas deu erro: " + ex.Message + ex.StackTrace);
+                return BadRequest("Chamou o endpoint mas deu erro: " + ex.Message + ex.StackTrace + Constants.CAMINHO_ARQUIVO);
             }
         }
     }
