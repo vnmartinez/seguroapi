@@ -9,7 +9,7 @@ public class CarregaDadosCSV : ICarregaDados
 {
     public List<CarInsuranceModel> Search()
     {
-        return Load<CarInsuranceModel>(Constants.CAMINHO_ARQUIVO);
+        return Load<CarInsuranceModel>(@Constants.CAMINHO_ARQUIVO);
     }
 
     public List<T> Load<T>(string local)
