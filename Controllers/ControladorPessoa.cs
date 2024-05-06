@@ -24,7 +24,7 @@ namespace PROVA_N2.Controllers
             _cache = memoryCache;
             _httpClient = httpClient;
         }
-
+        [NonAction]
         [HttpGet("CsvData",Name = "GetCsvData")]
         public async Task<IEnumerable<string>> GetCsvData()
         {

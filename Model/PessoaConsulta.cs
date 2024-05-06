@@ -7,7 +7,7 @@ public class PessoaConsulta
     public  string? Income { get; set; }
     public int VehicleYear { get; set; }
     public  string? VehicleType { get; set; }
-    public string? AnnualMileage {  get; set; } 
+    public float? AnnualMileage {  get; set; } 
 
     public String GetAgeRange(){
         if (Utils.IsBetween(Age, 16,25))

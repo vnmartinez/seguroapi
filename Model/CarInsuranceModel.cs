@@ -13,7 +13,7 @@ public class CarInsuranceModel
     public float? Married { get; set; }
     public float? Children { get; set; }
     public int PostalCode { get; set; }
-    public string? AnnualMileage { get; set; }
+    public float? AnnualMileage { get; set; }
     public string? VehicleType { get; set; }
     public int SpeedingViolations { get; set; }
     public int DUIs { get; set; }
